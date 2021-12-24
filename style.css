@@ -1,0 +1,356 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap');
+ 
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+/* end of css reset */
+
+.nav {
+    background-color: #2e323f;
+    padding: 1em 0
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__flex--list {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    padding: 0;
+    margin: 0 ;
+    gap: 1.5rem;
+}
+
+.nav__text {
+    font-family: 'Oswald', sans-serif;
+    font-size:18px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #fff;
+}
+.nav__link--button {
+    background-color: #a59678;
+    padding: 0.15em 0.75em;
+    border-radius: 50px;
+}
+
+.hero {
+    padding: 200px 0;
+    background-color: #3b4050;
+}
+
+.hero__flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    padding: 1rem 0;
+    color: #fff;
+    padding-bottom: 3rem;
+}
+
+.hero__title--brown {
+    color:#a59678;
+}
+
+.hero__intro {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 3px;
+    padding-bottom: 2rem;
+}
+
+.hero__button {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    background-color: #a59678;
+    color: #fff;
+    font-size: 24px;
+    padding: 0.25em 1em;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main {
+    font-family: 'Oswald', sans-serif;
+    background-color: #a5967838;
+    padding: 3rem 0;
+}
+
+.main__title {
+    font-size: 30px;
+    color: #a59678;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.main__text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.main__two {
+    padding: 3rem 0;
+}
+
+.main__two--title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    color: #a59678;
+    padding-bottom: 2rem;
+}
+
+figure{
+    width:100%; /*container-width*/
+    overflow:hidden; /*hide bounds of image */
+    margin:0;   /*reset margin of figure tag*/
+ }
+ figure img{
+    display:block; /*remove inline-block spaces*/
+    width:100%; /*make image streatch*/
+ }
+
+.main__two--text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    padding: 2rem 0;
+}
+
+.main__two--img {
+    width: 100%;
+}
+
+.col__aside {
+    background-color: #3b4050;
+    padding : 2rem 3rem;
+    text-align: center;
+}
+
+.col__aside--title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    padding-bottom: 2rem;
+}
+
+.col__aside--text {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+
+.footer {
+    background-color: #3b4050;
+    padding: 50px;
+}
+
+.footer__title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.footer__sub--title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    color:#a59678;
+    padding: 2rem 0;
+}
+
+.footer__sub--text {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    line-height: 2;
+}
+
+.footer__links {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    padding-bottom: 3rem;
+
+}
+
+@media (min-width:700px) {
+
+    .nav__flex {
+        flex-direction: row;
+    }
+
+    .nav__flex--list {
+        flex-direction: row;
+    }
+    
+    .row {
+        flex-direction: row;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    figure img{
+        /*add to other styles*/
+        margin:-21.875% 0;
+     }
+
+    .footer__bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+     }
+
+     .footer__bottom--categories {
+         display: flex;
+         justify-content: space-between;
+     }
+
+     .col__aside {
+
+        padding : 2rem 1rem;
+    }
+}
+
+@media (min-width:1000px) {
+
+    .nav__flex {
+        flex-direction: row;
+    }
+
+    .nav__flex--list {
+        flex-direction: row;
+    }
+
+    .flex_lg {
+        display: flex;
+        flex-direction: row;
+        gap: 6rem;
+    }
+    
+    .row {
+        flex-direction: row;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    figure img{
+        margin: 0;
+    }
+
+    .footer__bottom {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+     }
+
+     .footer__bottom--text {
+        flex: 0 1 500px ;
+     }
+
+     .footer__bottom--categories {
+         display: flex;
+         gap: 1rem;
+         flex: 1;
+     }
+}
+
+
+
+
+
